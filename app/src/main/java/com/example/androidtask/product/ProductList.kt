@@ -48,7 +48,7 @@ fun ProductListContent(viewModel: ProductViewModel = hiltViewModel()) {
     }
 
 
-    //if (!viewModel.productsList.isEmpty()){
+    if (!viewModel.productsList.isEmpty()){
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
             modifier = Modifier
@@ -155,7 +155,7 @@ fun ProductListContent(viewModel: ProductViewModel = hiltViewModel()) {
             }
         }
     }
-//}
+}
 
 @Preview (showBackground = true , showSystemUi = true)
 @Composable

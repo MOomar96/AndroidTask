@@ -69,15 +69,18 @@ dependencies {
     kapt ("com.google.dagger:hilt-compiler:2.51.1")
     implementation(project(":data"))
     implementation(project(":domain"))
-
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     val room_version = "2.6.1"
-
     implementation("androidx.room:room-runtime:$room_version")
-
-
     implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
 
+    testImplementation("junit:junit:4.12")
+    testImplementation("junit:junit:4.12")
+    testImplementation("junit:junit:4.12")
+    val mockkVersion = "1.13.10"
+    testImplementation ("io.mockk:mockk-android:${mockkVersion}")
+    testImplementation ("io.mockk:mockk-agent:${mockkVersion}")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")

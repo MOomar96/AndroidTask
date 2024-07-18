@@ -17,7 +17,7 @@ class ProductViewModel @Inject constructor(private val repository: ProductReposi
     fun getProductsFromRepository(){
         viewModelScope.launch() {
             try {
-                val response = repository.getProducts()//...
+                val response = repository.getProducts()  //...
 
                 if (response.isNotEmpty()) {
                 productsList.addAll(response)

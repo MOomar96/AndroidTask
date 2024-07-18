@@ -49,6 +49,7 @@ dependencies {
     val mockkVersion = "1.13.10"
     testImplementation ("io.mockk:mockk-android:${mockkVersion}")
     testImplementation ("io.mockk:mockk-agent:${mockkVersion}")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
     kapt ("com.google.dagger:hilt-compiler:2.51.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
